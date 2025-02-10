@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f5f0;
@@ -39,11 +39,28 @@ header {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 40px 20px;
+    padding: 0px 20px 0px 20px;
+}
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #FF6B55; /* Tomato color */
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.icon img {
+    width: 20px;  /* Adjust width */
+    vertical-align: middle; /* Align with text */
 }
 
 .hero .tag {
-    background: #ff6347;
+    background: #FF6B55;
     color: white;
     padding: 5px 10px;
     border-radius: 20px;
@@ -51,37 +68,51 @@ header {
 }
 
 .hero h1 {
-    color: #03582e;
+    color: #00853C;
     margin-top: 10px;
+    font-size: 42px;
+    line-height: 54.2px;
+    margin: 10px 0px 15px 0px;
 }
 
 .hero p {
     margin: 10px 0;
-    color: #666;
+    color: #001D23;
+    font-size: 14px;
+    opacity: 80%;
+    line-height: 21px;
 }
 
 .cta-btn {
-    background: #008000;
+    background: #00853C;
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
     font-size: 16px;
     margin-top: 15px;
+    display: inline-flex;
+    padding: 7px 14px 7px 7px;
+    align-items: center;
+;
+}
+
+.cta-btn img{
+    width: 36px;
+    padding-right: 10px;
 }
 
 .hero-image {
     width: 100%;
     max-width: 350px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 /* Tab Menu */
 .tab-menu {
     display: flex;
     justify-content: center;
-    background: #03582e;
+    background: #00853C;
     padding: 10px;
 }
 
@@ -99,7 +130,7 @@ header {
 }
 
 .services .tag {
-    background: #ff6347;
+    background: #FF6B55;
     color: white;
     padding: 5px 10px;
     border-radius: 20px;
@@ -107,7 +138,7 @@ header {
 }
 
 .services h2 {
-    color: #03582e;
+    color: #00853C;
     margin-top: 10px;
 }
 
@@ -133,7 +164,7 @@ header {
 }
 
 .card h3 {
-    color: #03582e;
+    color: #00853C;
 }
 
 .card p {
@@ -146,7 +177,7 @@ header {
     bottom: 15px;
     right: 20px;
     font-size: 24px;
-    color: #03582e;
+    color: #00853C;
     cursor: pointer;
 }
 

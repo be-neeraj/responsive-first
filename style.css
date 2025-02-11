@@ -140,7 +140,7 @@ header {
     padding: 50px 20px;
 }
 
-.services .tag {
+.services .icon {
     background: #FF6B55;
     color: white;
     padding: 5px 10px;
@@ -264,8 +264,29 @@ header {
 }
 
 .lookup-image img {
-    width: 400px;
+    width: 106%;
     max-width: 400px;
+}
+
+.pet-tag {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.pet-tag .icon {
+    background: #FF6B55;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%; /* For a fully rounded icon */
+    font-size: 14px;
+    display: inline-block; /* Ensures the element behaves like an inline block element */
+}
+
+.pet-tag h2 {
+    color: #262932;
+    margin-top: 10px;
+    font-size: 32px;
+    margin-bottom: 12px;
 }
 
 

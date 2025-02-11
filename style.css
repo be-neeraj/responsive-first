@@ -277,9 +277,8 @@ header {
     background: #FF6B55;
     color: white;
     padding: 5px 10px;
-    border-radius: 50%; /* For a fully rounded icon */
+    border-radius: 20px;
     font-size: 14px;
-    display: inline-block; /* Ensures the element behaves like an inline block element */
 }
 
 .pet-tag h2 {

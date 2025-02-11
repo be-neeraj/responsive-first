@@ -72,7 +72,7 @@ header {
 }
 
 .hero h1 {
-    color: #00853C;
+    color: #00853C !important;
     margin-top: 10px;
     font-size: 42px;
     line-height: 54.2px;

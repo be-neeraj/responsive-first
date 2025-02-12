@@ -206,7 +206,6 @@ header {
     color: white;
     text-align: center;
     padding: 40px 20px 0px 20px;
-    border-radius: 10px;
     position: relative;
     overflow: hidden;
 }
@@ -286,6 +285,32 @@ header {
     margin-top: 10px;
     font-size: 32px;
     margin-bottom: 12px;
+}
+
+.feature {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+    color: #2E7D32;
+}
+
+.feature-inside {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feature-icon {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon img {
+    width: 24px;
+    height: 24px;
 }
 
 

@@ -269,6 +269,7 @@ header {
 
 /* Pet Tag */
 .pet-tag {
+    background-color: #ffffff;
     text-align: center;
     padding: 50px 20px;
 }
@@ -341,6 +342,43 @@ header {
     margin-bottom: 12px;
 }
 
+.why-choose-us-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.Choose-us-card {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  /*align-items: center; /* Centers horizontally */
+  text-align: left; /* left text */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  justify-content: center; /* Centers vertically (if needed) */
+  padding: 20px 10px; /* Adds some spacing */
+  position: relative;
+}
+
+.Choose-us-card img {
+    width: 64px;
+    /*margin-top: 15px;*/
+}
+
+.Choose-us-card h3 {
+    color: #222222;
+    font-size: 20px;
+}
+
+.Choose-us-card p {
+    color: #868686;
+    font-size: 12px;
+    margin: unset;
+    line-height: 16.8px;
+}
+
 /* Responsive Design */
 @media (min-width: 300px) {
     .service-cards {
@@ -358,5 +396,13 @@ header {
 
     .service-cards {
         grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 300px) {
+    .why-choose-us-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 }

@@ -379,6 +379,117 @@ header {
     line-height: 16.8px;
 }
 
+/*Pricing Section*/
+.our-pricing {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.our-pricing .icon {
+    background: #FF6B55;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.our-pricing h2 {
+    color: #262932;
+    margin-top: 10px;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: none; /* Hides scrollbar on Firefox */
+    -ms-overflow-style: none; /* Hides scrollbar on IE/Edge */
+}
+
+/* Hide scrollbar for Webkit browsers */
+.pricing-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Individual Pricing Cards */
+.pricing-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    min-width: 280px;
+    max-width: 320px;
+    flex: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+}
+
+/* Plan Titles */
+.pricing-card h3 {
+    font-size: 20px;
+    color: #00853C;
+    margin-bottom: 10px;
+}
+
+/* Pricing */
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* CTA Button */
+.cta-btn {
+    background: #00853C;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.cta-btn:hover {
+    background: #006b2d;
+}
+
+/* Plan Details */
+.plan-details {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #555;
+}
+
+.plan-details li {
+    margin: 5px 0;
+}
+
+/* "Know More" Link */
+.more-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00853C;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (min-width: 300px) {
     .service-cards {

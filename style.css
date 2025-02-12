@@ -7,16 +7,14 @@ body {
     color: #333;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-weight: bold;
 }
 
 p {
     line-height: 22.4px;
-}
-
-h3 {
-    margin: 15px 0px 8px 0px;
 }
 
 /* Header */
@@ -50,7 +48,8 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: #FF6B55; /* Tomato color */
+    background: #FF6B55;
+    /* Tomato color */
     color: white;
     padding: 6px 12px;
     border-radius: 20px;
@@ -59,8 +58,10 @@ header {
 }
 
 .icon img {
-    width: 20px;  /* Adjust width */
-    vertical-align: middle; /* Align with text */
+    width: 20px;
+    /* Adjust width */
+    vertical-align: middle;
+    /* Align with text */
 }
 
 .hero .tag {
@@ -98,10 +99,10 @@ header {
     display: inline-flex;
     padding: 7px 14px 7px 7px;
     align-items: center;
-;
+    ;
 }
 
-.cta-btn img{
+.cta-btn img {
     width: 36px;
     padding-right: 10px;
 }
@@ -128,11 +129,15 @@ header {
 }
 
 .tab-menu a img {
-    width: 26px;  /* Sets the icon width to 26px */
-    height: auto; /* Maintains the aspect ratio */
-    margin-right: 8px; /* Adds spacing between icon and text */
-    vertical-align: middle; /* Aligns the icon with text */
-  }
+    width: 26px;
+    /* Sets the icon width to 26px */
+    height: auto;
+    /* Maintains the aspect ratio */
+    margin-right: 8px;
+    /* Adds spacing between icon and text */
+    vertical-align: middle;
+    /* Aligns the icon with text */
+}
 
 /* Services Section */
 .services {
@@ -163,17 +168,21 @@ header {
 }
 
 .card {
-  background: white;
-  display: flex;
-  flex-direction: column;
-  border-radius: 24px;
-  border-top: 6px solid #00853C;
-  align-items: center; /* Centers horizontally */
-  text-align: center; /* Centers text */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  justify-content: center; /* Centers vertically (if needed) */
-  padding: 20px 10px; /* Adds some spacing */
-  position: relative;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    border-top: 6px solid #00853C;
+    align-items: center;
+    /* Centers horizontally */
+    text-align: center;
+    /* Centers text */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    /* Centers vertically (if needed) */
+    padding: 20px 10px;
+    /* Adds some spacing */
+    position: relative;
 }
 
 .card img {
@@ -202,7 +211,8 @@ header {
 /* microchip section*/
 
 .microchip-lookup {
-    background: #007D38; /* Green background */
+    background: #007D38;
+    /* Green background */
     color: white;
     text-align: center;
     padding: 40px 20px 0px 20px;
@@ -350,16 +360,19 @@ header {
 }
 
 .Choose-us-card {
-  background: white;
-  display: flex;
-  flex-direction: column;
-  border-radius: 24px;
-  /*align-items: center; /* Centers horizontally */
-  text-align: left; /* left text */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  justify-content: center; /* Centers vertically (if needed) */
-  padding: 20px 10px; /* Adds some spacing */
-  position: relative;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    /*align-items: center; /* Centers horizontally */
+    text-align: left;
+    /* left text */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+    /* Centers vertically (if needed) */
+    padding: 20px 10px;
+    /* Adds some spacing */
+    position: relative;
 }
 
 .Choose-us-card img {
@@ -406,8 +419,19 @@ header {
     gap: 20px;
     overflow-x: auto;
     padding-bottom: 10px;
-    scrollbar-width: none; /* Hides scrollbar on Firefox */
-    -ms-overflow-style: none; /* Hides scrollbar on IE/Edge */
+    scrollbar-width: none;
+    /* Hides scrollbar on Firefox */
+    -ms-overflow-style: none;
+    /* Hides scrollbar on IE/Edge */
+}
+
+.pricing-heading {
+    text-align: left;
+}
+
+.pricing-heading h3 {
+    font-size: 14px;
+    margin: 0px 0px 8px 0px;
 }
 
 /* Hide scrollbar for Webkit browsers */
@@ -416,14 +440,63 @@ header {
 }
 
 /* Individual Pricing Cards */
-.pricing-card {
-    background: #fff;
+.pricing-card-bronze {
+    background-image: url("images/bronze-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #EDEDED;
     padding: 20px;
     text-align: center;
     min-width: 280px;
     max-width: 320px;
+    flex: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card-silver {
+    background-image: url("images/silver-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border: 1px solid #EDEDED;
+    padding: 20px;
+    text-align: center;
+    min-width: 280px;
+    max-width: 320px;
+    flex: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card-gold {
+    background-image: url("images/gold-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border: 1px solid #EDEDED;
+    padding: 20px;
+    text-align: center;
+    min-width: 280px;
+    max-width: 320px;
+    flex: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card-platinum {
+    background-image: url("images/platinum-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    border: 1px solid #EDEDED;
+    padding: 20px;
+    text-align: center;
+    min-width: 280px;
+    max-width: 320px;
+    height: 414px;
     flex: 1;
     transition: transform 0.3s ease-in-out;
 }
@@ -434,36 +507,38 @@ header {
 
 /* Plan Titles */
 .pricing-card h3 {
-    font-size: 20px;
+    font-size: 14px;
     color: #00853C;
-    margin-bottom: 10px;
+    margin: 0px 0px 8px 0px;
 }
 
 /* Pricing */
 .price {
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
     color: #333;
+    line-height: 40.6px;
+    margin: unset;
 }
 
-/* CTA Button */
-.cta-btn {
-    background: #00853C;
-    color: white;
-    border: none;
+.price-cta-btn {
+    border-radius: var(--radius-md, 8px);
+    border: 1px solid #E7E7E7;
+    background: #FFF;
+    box-shadow: 0px 2px 2px 0px #E7EBEC;
+    margin-top: 15px;
+    width: 100%;
     padding: 10px 15px;
     border-radius: 8px;
     cursor: pointer;
-    width: 100%;
     font-size: 16px;
-    margin-top: 15px;
 }
 
-.cta-btn:hover {
+/* .cta-btn:hover {
     background: #006b2d;
-}
+} */
 
-/* Plan Details */
+
 .plan-details {
     list-style: none;
     padding: 0;
@@ -471,11 +546,26 @@ header {
     text-align: left;
     font-size: 14px;
     color: #555;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* Creates uniform spacing */
+}
+
+.plan-details li .yes-heading{
+    font-size: 18px;
 }
 
 .plan-details li {
     margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
+
+/* .plan-details li img{
+    padding: 0px 0px 10px 0px;
+} */
 
 /* "Know More" Link */
 .more-link {

@@ -609,8 +609,8 @@ header {
 .sliders{
     padding: 20px;
   text-align: center;
-  min-width: 280px;
-  max-width: 320px;
+  /* min-width: 280px;
+  max-width: 320px; */
   flex: 1;
   overflow-x: auto;
   -ms-overflow-style: none;
@@ -618,8 +618,12 @@ header {
   gap: 20px;
 }
 
-.slides{
+/* .slides{
     width: 100%;
+} */
+
+.slides img{
+    width: 80vw;
 }
 /* Responsive Design */
 @media (min-width: 300px) {

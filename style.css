@@ -396,7 +396,7 @@ header {
 .our-pricing {
     background-color: #ffffff;
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 20px 20px 20px;
 }
 
 .our-pricing .icon {
@@ -418,8 +418,9 @@ header {
     display: flex;
     gap: 20px;
     overflow-x: auto;
-    padding-bottom: 10px;
+    padding: 0px 0px 50px 20px;
     scrollbar-width: none;
+    background-color: #FFF;
     /* Hides scrollbar on Firefox */
     -ms-overflow-style: none;
     /* Hides scrollbar on IE/Edge */
@@ -496,7 +497,7 @@ header {
     text-align: center;
     min-width: 280px;
     max-width: 320px;
-    height: 414px;
+    height: 370px;
     flex: 1;
     transition: transform 0.3s ease-in-out;
 }
@@ -556,6 +557,11 @@ header {
     font-size: 18px;
 }
 
+.plan-details li p{
+    text-decoration-line: underline;
+    text-decoration-color: #344054;
+}
+
 .plan-details li {
     margin: 5px 0;
     display: flex;
@@ -569,9 +575,10 @@ header {
 
 /* "Know More" Link */
 .more-link {
-    display: inline-block;
+    display: block;  /* Ensures it takes full width */
+    text-align: left;
     margin-top: 10px;
-    color: #00853C;
+    color: #FF6B55;
     font-weight: bold;
     text-decoration: none;
 }
@@ -580,6 +587,40 @@ header {
     text-decoration: underline;
 }
 
+
+/* Tail Tag Steps*/
+
+.tail-tag-steps {
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+}
+
+/* .pricing-container {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 0px 0px 50px 20px;
+    scrollbar-width: none;
+    background-color: #FFF;
+    /* Hides scrollbar on Firefox */
+    /* -ms-overflow-style: none; */
+    /* Hides scrollbar on IE/Edge */
+
+.sliders{
+    padding: 20px;
+  text-align: center;
+  min-width: 280px;
+  max-width: 320px;
+  flex: 1;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.slides{
+    width: 100%;
+}
 /* Responsive Design */
 @media (min-width: 300px) {
     .service-cards {

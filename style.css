@@ -267,6 +267,7 @@ header {
     max-width: 400px;
 }
 
+/* Pet Tag */
 .pet-tag {
     text-align: center;
     padding: 50px 20px;
@@ -313,6 +314,32 @@ header {
     height: 24px;
 }
 
+.tail-tag-image {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 40px;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.why-choose-us .icon {
+    background: #FF6B55;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.why-choose-us h2 {
+    color: #262932;
+    margin-top: 10px;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
 
 /* Responsive Design */
 @media (min-width: 300px) {

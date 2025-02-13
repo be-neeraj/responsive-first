@@ -595,36 +595,41 @@ header {
     padding: 50px 20px 20px 20px;
 }
 
-/* .pricing-container {
+/* testing tail tag steps*/
+.horizontal-scroll-container {
     display: flex;
-    gap: 20px;
     overflow-x: auto;
-    padding: 0px 0px 50px 20px;
-    scrollbar-width: none;
-    background-color: #FFF;
-    /* Hides scrollbar on Firefox */
-    /* -ms-overflow-style: none; */
-    /* Hides scrollbar on IE/Edge */
-
-.sliders{
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
     padding: 20px;
-  text-align: center;
-  /* min-width: 280px;
-  max-width: 320px; */
-  flex: 1;
-  overflow-x: auto;
-  -ms-overflow-style: none;
-  display: flex;
-  gap: 20px;
+    gap: 30px;
 }
 
-/* .slides{
-    width: 100%;
+.step {
+    text-align: center;
+    border-radius: 10px;
+    scroll-snap-align: center;
+}
+
+.step p {
+    display: block;
+    white-space: normal; /* Allows text to wrap */
+}
+
+.step img {
+    width: 80vw;
+    border-radius: 10px;
+}
+
+/* .step-header {
+    background-color: #107c41;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
 } */
 
-.slides img{
-    width: 80vw;
-}
 /* Responsive Design */
 @media (min-width: 300px) {
     .service-cards {

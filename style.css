@@ -627,9 +627,8 @@ header {
     padding: 50px 20px 20px 20px;
 }
 .faq {
-    background: #fff;
+    background: #F6F6F6;
     border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 10px;
     overflow: hidden;
 }
@@ -647,7 +646,7 @@ header {
     align-items: center;
 }
 
-.arrow {
+.faq-arrow {
     transition: transform 0.3s ease-in-out;
 }
 
@@ -664,6 +663,10 @@ header {
 
 .faq.active .arrow {
     transform: rotate(180deg);
+}
+
+.faq-pet-owner img{
+    width: 100%;
 }
 
 /* Responsive Design */
@@ -691,5 +694,12 @@ header {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+    }
+}
+
+/* faq section responsive */
+@media (max-width: 768px) {
+    .faq-section {
+        max-width: 90%;
     }
 }

@@ -669,6 +669,11 @@ header {
     width: 100%;
 }
 
+.testimonials-section {
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+}
+
 /* Responsive Design */
 @media (min-width: 300px) {
     .service-cards {

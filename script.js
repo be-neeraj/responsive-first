@@ -20,3 +20,18 @@ document.querySelectorAll(".faq-question").forEach((button) => {
         faq.classList.toggle("active");
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector(".testimonial-track");
+    
+    function cloneTestimonials() {
+        const testimonials = document.querySelectorAll(".testimonial-card");
+        testimonials.forEach(testimonial => {
+            let clone = testimonial.cloneNode(true);
+            track.appendChild(clone);
+        });
+    }
+
+    cloneTestimonials();
+});

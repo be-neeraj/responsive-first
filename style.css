@@ -735,7 +735,7 @@ header {
 .testimonial-track {
     display: flex;
     gap: 20px;
-    animation: scrollAnimation 10s linear infinite;
+    animation: scrollAnimation 30s linear infinite;
 }
 
 /* Testimonial Card */
@@ -786,11 +786,11 @@ h3 {
 /* Keyframe Animation for Left-to-Right Scrolling */
 @keyframes scrollAnimation {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(100%);
     }
 
     100% {
-        transform: translateX(100%);
+        transform: translateX(-100%);
     }
 }
 

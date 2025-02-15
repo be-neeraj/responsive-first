@@ -731,6 +731,12 @@ header {
     height: 200px;
 }
 
+.testimonial-slider-2 {
+    overflow: hidden;
+    padding-top: 20px;
+    height: 200px;
+}
+
 /* Scrolling Animation */
 .testimonial-track {
     display: flex;
@@ -794,7 +800,12 @@ h3 {
     }
 }
 
-
+/* Help Desk */
+.help-desk {
+    text-align: center;
+    background-color: #FFF;
+    padding: 50px 20px 20px 20px;
+}
 
 
 /* Animation */

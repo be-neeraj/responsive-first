@@ -630,6 +630,10 @@ header {
     scroll-snap-align: center;
 }
 
+.step h3 {
+    margin: 15px;
+}
+
 .step p {
     display: block;
     white-space: normal;
@@ -801,26 +805,80 @@ h3 {
 }
 
 /* Help Desk */
+.horizontal-scroll-container-help {
+    display: flex;
+    overflow-x: auto;
+    background-color: #FFF;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    padding: 0px 0px 50px 20px;
+    gap: 30px;
+}
+
 .help-desk {
     text-align: center;
     background-color: #FFF;
     padding: 50px 20px 20px 20px;
 }
 
+.help-card {
+    /* width: 100%; 
+    max-width: 340px;  */
+    border-radius: 24px;
+    border-top: 6px solid transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
 
-/* Animation */
-/* @keyframes scrollTestimonials {
-    0% {
-        transform: translateX(0);
-    }
+/* Card header */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    100% {
-        transform: translateX(-50%);
-    }
-} */
+.card-header h2 {
+    white-space: normal; /* Allows text to wrap */
+    word-wrap: break-word; /* Breaks long words if necessary */
+    overflow-wrap: break-word; /* Ensures words break inside container */
+    font-size: 30px; /* Adjust font size if needed */
+    line-height: 1.4; /* Improves readability */
+    margin: 0px;
+}
 
-/* Responsive Design
-@media (min-width: 300px) {
+/* Arrow button */
+.arrow-button { 
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Divider */
+hr {
+    border: 0;
+    height: 1px;
+    background: #262932;
+}
+
+/* Image styling */
+.arrow-button img {
+    width: 12vw; /* Adjust size of arrow */
+    height: auto;
+}
+
+.card-image img {
+    width: 60vw;  /* Make image responsive to the card */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below the image */
+    border-radius: 12px; /* Match card's rounded edges */
+}
+
+
+/* Responsive Design*/
+/* @media (min-width: 300px) {
     .service-cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -845,7 +903,7 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
-}
+} */
 
 /* faq section responsive 
 @media (max-width: 768px) {

@@ -894,11 +894,25 @@ hr {
     align-items: center;
 }
 .logo-section {
-    max-width: 40%;
+    text-align: left;
+    /* max-width: 40%; */
 }
+.logo-section p{
+    text-align: left;
+}
+
+.form{
+    background-color: #FFF;
+}
+
 .logo {
     max-width: 150px;
 }
+
+.newsletter{
+background-color: #FFF;
+}
+
 .newsletter input {
     padding: 10px;
     border: none;
@@ -906,13 +920,12 @@ hr {
     margin-right: 10px;
 }
 .newsletter button {
-    background-color: white;
     color: #02762c;
     padding: 10px 15px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
+
 .social-links a {
     color: white;
     margin: 0 10px;
